@@ -4,6 +4,16 @@ package Array;
 public class MaximumSubarray {
 
     /*
+
+    * Find the contiguous subarray within an array (containing at least one number)
+    * which has the largest sum.
+    * For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
+    * the contiguous subarray [4,-1,2,1] has the largest sum = 6.
+    *
+    * 找出数组里面连续子序列的sum最大值。
+    * 比如[-2,1,-3,4,-1,2,1,-5,4]
+    * [4,-1,2,1], 最大值为6
+    *
     * 调用：MaximumSubarray.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4})
     *
     * 动态规划类题目。
@@ -19,6 +29,8 @@ public class MaximumSubarray {
     *          globalMAX[i] = Max{globalMAX[i-1], localMax[i]}
     *
     *         globalMAX便是当前连续子序列最大值的答案。
+    *
+    *         时间复杂度O(n),空间复杂度O(1)
     * */
     public static int maxSubArray(int[] nums) {
 
